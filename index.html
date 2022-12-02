@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid mt-10">
+        <div class="output w-1/2 justify-self-center justify-end text-end  border-4 m-5 grid">
+            <div class="mr-6 h-32 grid content-between">
+                <h1 data-previous-operand class="mt-4 text-xl font-bold"></h1>
+                <h1 data-current-operand class="mb-4 text-xl font-bold"></h1>
+            </div>
+        </div>
+        <div class="keypad w-1/2 justify-self-center">
+            
+            <div class="grid grid-cols-4">
+                <button data-operation class="bg-slate-200 p-5 m-2 hover:bg-slate-400">-</button>
+                <button data-operation class="bg-slate-200 p-5 m-2 hover:bg-slate-400">X</button>
+                <button data-operation class="bg-slate-200 p-5 m-2 hover:bg-slate-400">+</button>
+                <button data-operation class="bg-slate-200 p-5 m-2 hover:bg-slate-400">/</button>
+
+                
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">7</button>
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">8</button>
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">9</button>
+                <button data-equation class="bg-slate-200 p-5 m-2 row-span-3 bg-red-400 hover:bg-red-600">=</button>
+                
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">4</button>
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">5</button>
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">6</button>
+                
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">1</button>
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">2</button>
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">3</button>
+                
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">0</button>
+                <button data-digit class="bg-slate-200 p-5 m-2 hover:bg-slate-400">.</button>
+                <button data-allclear class="bg-slate-200 p-5 m-2 hover:bg-slate-400">AC</button>
+                <button data-delet class="bg-slate-200 p-5 m-2 hover:bg-slate-400">DEL</button>
+        </div>
+    </div>
+
+<script src="javascript.js"></script>
+</body>
+</html>
